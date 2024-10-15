@@ -205,7 +205,7 @@ export const SystemsTable = ({
             all: true,
             name: false,
             operatingSystem: false,
-            tags: true, //enable when tag filtering is supported by complience-client package
+            tags: false,
             hostGroupFilter: !showGroupsFilter,
           }}
           showTags
