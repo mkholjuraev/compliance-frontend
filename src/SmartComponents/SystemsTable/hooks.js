@@ -187,7 +187,6 @@ export const useGetEntities = (
       apiV2Enabled
     );
 
-    console.log(filters, filterForApi, 'debug: useGetEntities');
     const fetchedEntities = await fetchEntities(perPage, page, {
       ...filterForApi,
       sortBy,
