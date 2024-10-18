@@ -114,12 +114,12 @@ export const SystemsTable = ({
   useInventoryUtilities(inventory, selectedIds, activeFilterValues);
 
   const onComplete = useCallback(
-    (result) => {
+    (result, { tags }) => {
       setTotal(result.meta.totalCount);
       setItems(result.entities);
       setPerPage(result.perPage);
       setIsLoaded(true);
-      setCurrentTags(result.meta.tags);
+      setCurrentTags(tags);
 
       if (
         emptyStateComponent &&
